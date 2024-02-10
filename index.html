@@ -18,7 +18,13 @@
             --text-color: #000;
             --text-light-color: #666;
         }
-
+        :root[theme="dark"] {
+            --primary-color: #141414;
+            --secondary-color: #1c1c1c;
+            --highlight-color: #ff0;
+            --text-color: #cfffab;
+            --text-light-color: #aaa;
+        }
         body {
             font-family: 'Space Mono', monospace;
             background-color: var(--primary-color);
@@ -36,6 +42,7 @@
         h1 {
             font-size: 3rem;
             margin: 0;
+            color: var(--text-color);
         }
 
         h2 {
@@ -43,10 +50,12 @@
             margin: 0;
             border-right: .15em solid var(--highlight-color);
             animation: blink-caret .5s step-end infinite;
+            color: var(--text-color);
         }
 
         h3 {
             margin: 0;
+            color: var(--text-color);
         }
 
         .grid {
@@ -74,6 +83,7 @@
         .title {
             font-size: 1.5rem;
             font-weight: 700;
+            color: var(--text-color);
         }
 
         .description {
@@ -114,7 +124,12 @@
             }
         }
 
-        
+        .theme_switch{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+
+        }
     /* Media query for mobile devices */
     @media (max-width: 600px) {
         body {
@@ -160,6 +175,11 @@
 </head>
 
 <body>
+    <div class="theme_switch">
+        <span class="material-symbols-outlined" style="color: var(--text-color);" >
+            brightness_4
+        </span>
+    </div>
     <h1>guruprasad dalvi.</h1>
     <h2>full stack software developer&nbsp;</h2>
     <div class="row">
@@ -247,6 +267,25 @@
             </div>
         </div>
     </div>
+    <script>
+        onload = () => {
+            const theme = localStorage.getItem('theme');
+            if (theme) {
+                document.querySelector('html').setAttribute('theme', theme);
+            }
+        }
+        const themeSwitch = document.querySelector('.theme_switch');
+        const html = document.querySelector('html');
+        themeSwitch.addEventListener('click', () => {
+            if (html.getAttribute('theme') === 'dark') {
+                html.setAttribute('theme', 'light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 </body>
 
 </html>
