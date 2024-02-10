@@ -12,8 +12,8 @@
     "index.html": "/vi.html",
     "static/css/main.3ac0fec2.chunk.css.map": "/static/css/main.3ac0fec2.chunk.css.map",
     "static/js/2.4a3aa7a7.chunk.js.LICENSE.txt": "/static/js/2.4a3aa7a7.chunk.js.LICENSE.txt",
-    "static/media/cyber_crimes.d7849936.csv": "/static/media/cyber_crimes.d7849936.csv",
-    "static/media/loksabha_seats_statewise.807a7151.csv": "/static/media/loksabha_seats_statewise.807a7151.csv"
+    "static/media/cyber_crimes.d7849936.csv": "static/media/cyber_crimes.d7849936.csv",
+    "static/media/loksabha_seats_statewise.807a7151.csv": "static/media/loksabha_seats_statewise.807a7151.csv"
   },
   "entrypoints": [
     "static/js/runtime-main.17e5441c.js",
