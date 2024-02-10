@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3ac0fec2.chunk.css",
+    "main.js": "/static/js/main.b381955b.chunk.js",
+    "main.js.map": "/static/js/main.b381955b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.17e5441c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.17e5441c.js.map",
+    "static/js/2.4a3aa7a7.chunk.js": "/static/js/2.4a3aa7a7.chunk.js",
+    "static/js/2.4a3aa7a7.chunk.js.map": "/static/js/2.4a3aa7a7.chunk.js.map",
+    "static/js/3.863fa06e.chunk.js": "/static/js/3.863fa06e.chunk.js",
+    "static/js/3.863fa06e.chunk.js.map": "/static/js/3.863fa06e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3ac0fec2.chunk.css.map": "/static/css/main.3ac0fec2.chunk.css.map",
+    "static/js/2.4a3aa7a7.chunk.js.LICENSE.txt": "/static/js/2.4a3aa7a7.chunk.js.LICENSE.txt",
+    "static/media/cyber_crimes.d7849936.csv": "/static/media/cyber_crimes.d7849936.csv",
+    "static/media/loksabha_seats_statewise.807a7151.csv": "/static/media/loksabha_seats_statewise.807a7151.csv"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17e5441c.js",
+    "static/js/2.4a3aa7a7.chunk.js",
+    "static/css/main.3ac0fec2.chunk.css",
+    "static/js/main.b381955b.chunk.js"
+  ]
+}
