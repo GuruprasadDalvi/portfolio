@@ -18,6 +18,7 @@
             --text-color: #000;
             --text-light-color: #666;
         }
+
         :root[theme="dark"] {
             --primary-color: #141414;
             --secondary-color: #1c1c1c;
@@ -25,6 +26,7 @@
             --text-color: #cfffab;
             --text-light-color: #aaa;
         }
+
         body {
             font-family: 'Space Mono', monospace;
             background-color: var(--primary-color);
@@ -37,6 +39,29 @@
             user-select: none;
             padding-top: 10vh;
             padding-bottom: 10vh;
+            scrollbar-width: thin;
+            /* "auto" or "thin" */
+            scrollbar-color: var(--highlight-color) var(--primary-color);
+            /* scroll thumb and track */
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            /* width of the entire scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--primary-color);
+            /* color of the tracking area */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--text-color);
+            /* color of the scroll thumb */
+            border-radius: 20px;
+            /* roundness of the scroll thumb */
+            border: 3px solid var(--primary-color);
+            /* creates padding around scroll thumb */
         }
 
         h1 {
@@ -124,72 +149,76 @@
             }
         }
 
-        .theme_switch{
+        .theme_switch {
             position: fixed;
             top: 10px;
             right: 10px;
 
         }
-    /* Media query for mobile devices */
-    @media (max-width: 600px) {
-        body {
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-            align-items: center;
-            justify-content: center;
-            overflow-x: hidden;
-        }
-        h1 {
-            font-size: 2rem;
-        }
 
-        h2 {
-            font-size: 1rem;
-        }
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            body {
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+                align-items: center;
+                justify-content: center;
+                overflow-x: hidden;
+            }
 
-        .grid {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
+            h1 {
+                font-size: 2rem;
+            }
 
-        .card {
-            width: 80%; /* Adjust card width to fit smaller screens */
-            height: auto; /* Let the card height adjust based on content */
-        }
+            h2 {
+                font-size: 1rem;
+            }
 
-        .title {
-            font-size: 1.2rem;
-        }
+            .grid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-        .description {
-            font-size: 0.8rem;
-        }
+            }
 
-        .link a {
-            font-size: 1rem;
+            .card {
+                width: 80%;
+                /* Adjust card width to fit smaller screens */
+                height: auto;
+                /* Let the card height adjust based on content */
+            }
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .description {
+                font-size: 0.8rem;
+            }
+
+            .link a {
+                font-size: 1rem;
+            }
         }
-    }
     </style>
 </head>
 
 <body>
     <div class="theme_switch">
-        <span class="material-symbols-outlined" style="color: var(--text-color);" >
+        <span class="material-symbols-outlined" style="color: var(--text-color);">
             brightness_4
         </span>
     </div>
     <h1>guruprasad dalvi.</h1>
     <h2>full stack software developer&nbsp;</h2>
     <div class="row">
-        <a href="mailto:dalviprasad39@gmail.com" >
-            <span class="material-symbols-outlined" style="color: var(--text-color);" >
+        <a href="mailto:dalviprasad39@gmail.com">
+            <span class="material-symbols-outlined" style="color: var(--text-color);">
                 mail
             </span>
         </a>
     </div>
-    
+
     <br />
     <br />
     <br />
